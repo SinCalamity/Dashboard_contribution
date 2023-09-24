@@ -1,0 +1,38 @@
+Problems As of Now:
+
+1) Registration or Sign Up Page/Form is somehow broken [http://127.0.0.1:8000/PayZone/register/] [I FEEL LIKE THERE'S ALOT OF ACTIONS MISSING THAT'S WHY IT DOESN'T WORK].
+   After the information needed in the Sign Up form was filled out and I finally clicked the Sign Up button, it didn't redirect me to the Log-In page.
+   Hence, the Sign Up page remains after such actions, plus the filled-in information from text boxes disappeared.
+   Not only that, but it also didn't save the data for the account I have tried to create [I KNEW, BECAUSE I CHECKED THE DJANGO ADMIN SITE > USERS, AND I CAN'T SEEMINGLY FIND THE ACCOUNT THAT I'VE TRIED TO CREATE].
+
+   1st NOTE: Since the Sign Up Page is currently broken, I've tried to skip the Sign Up page and went to the Login Page to test it; I used the account I've created [FROM THE COMMAND CREATESUPERUSER].
+         And somehow it worked and redirected me to my home_dashboard.html.
+
+   2nd NOTE: Base on my research; I've added some lines @settings.py @line 124 onwards related about the Sign Up and Log In page.
+
+   "Solutions I've tried so far"
+    a. I already did a lot of research about this problem [I'VE TRIED GOOGLE STACKOVERFLOW, YOUTUBE, CHATGPT, ETC]; But I did not manage to fix it :').
+
+===========================================Xx
+2) I can't manage to show the icons specifically for password icons in my login and register HTMLs, although my show/hide function works by integrating and using bootstrap sources.
+   But somehow the icons don't show up.
+
+   "Solutions I've tried so far"
+    a. I've tried different approaches, but I end up being on a loop and did not manage to fix it.
+
+===========================================Xx
+3) How do I make our home page urls [home_web.html in this case] from http://127.0.0.1:8000/PayZone into http://127.0.0.1:8000/PayZone?
+
+   "Solutions I've tried so far"
+    a. I've tried different approaches, but I always end up in getting page not found.
+
+===========================================Xx
+Django Admin Credentials
+Username: Admin
+Password: Group3
+
+===========================================Xx
+Thank you in advance for taking a look at our project.
+
+Regards,
+Matt

@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZone</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for styling */
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('{% static "/../PayZone/images/bg.jpg" %}');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Set text color to black for all elements */
+        * {
+            color: #000 !important;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.1);
+        }
+
+        /* Larger logo */
+        .navbar-brand img {
+            width: 80px;
+            height: auto;
+        }
+
+        /* Navigation links styling */
+        .navbar-nav a {
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        /* Sign Up button styling */
+        .btn-signup {
+            background-color: #007bff;
+            color: #ffffff;
+            transition: opacity 0.1s;
+        }
+
+        /* Reduce opacity only on hover */
+        .btn-signup:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: rgba(51, 51, 51, 0.1);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Content section styling */
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"><img src="{% static '/../PayZone/images/logo.png' %}" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-signup" href="{% url 'PayZone:register' %}">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="content">
+        <h2>About Us</h2>
+        <p>Welcome to Payroll, your trusted partner in managing employee salaries and payroll efficiently. We provide seamless solutions for businesses of all sizes, helping you streamline your payroll processes and ensure your employees are paid accurately and on time.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="content">
+        <h2>Features</h2>
+        <p>Our platform offers a range of features designed to simplify payroll management, including automated salary calculations, tax reporting, and direct deposit options. With Payroll, you can focus on growing your business while we take care of your payroll needs.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="content">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Our dedicated support team is here to help. Contact us via email at support@payroll.com or call us at +1 (123) 456-7890. We look forward to serving you!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 PayZone Philippines, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
