@@ -27,6 +27,13 @@ Problems As of Now:
     a. I've tried different approaches, but I always end up in getting page not found.
 
 ===========================================Xx
+4) The [background-image: url('{% static "/../PayZone/images/bg.jpg" %}');] under PayZone>images>bg.jpg doesn't work anymore.
+   It used to work perfectly fine before.
+
+   "Solutions I've tried so far"
+    I believe it's correct and should be working fine, just like before. I currently have no idea how to fix it.
+
+===========================================Xx
 Django Admin Credentials
 Username: Admin
 Password: Group3
